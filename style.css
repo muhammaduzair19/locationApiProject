@@ -3,28 +3,122 @@
     margin: 0;
     box-sizing: border-box;
 }
-.card{
+body{
+    background-image: linear-gradient(50deg, rgb(172, 249, 255), rgb(210, 195, 255));
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: sticky;
+}
+.container{
     display: flex;
-    border-radius: 10px;
-    padding: 10px;
-    background-image: linear-gradient(75deg, rgb(255, 194, 128), rgb(172, 255, 199));
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+.container p{
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.mainPage{
+    width: 100%;
+    height: 86vh;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.leftSection{
+    width: 50%;
+    height: 100%;
+}
+.rightSection{
+    width: 50%;
+}
+.countryData{
+    width: 100%;
+    height: 100%;
+}
+.inputFields{
+    width: 100%;
+    height: 50%;
+    padding-top: 20px;
+}
+.country{
+    width: 100%;
+    height: 50%;
+}
+form{
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: 300px;
-    min-height: 500px;
-    background-color: turquoise;
+    align-items: center;
+}
+.inputFields h3{
+    font-size: xx-large;
+    text-align: center;
+}
+label{
+    display: flex;
+    justify-content: space-around;
+    min-width: 60%;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(175, 232, 248);
+}
+label input{
+    width: 300px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+label input:focus{
+    outline: none;
+}
+.submit{
+    color: black;
+    background-color: rgb(131, 206, 226);
+    width: 100px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+.submit:hover{
+    color: white;
+    background-color: black;
+}
+.country{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.country-container img{
+    width: 400px;
+    height: 200px;
+}
+.country-container{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
 }
-/* .productDetails{
-    width: 40%;
-    height: 60%;
-    background-color: azure;
-    z-index: 99;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-} */
